@@ -1,0 +1,57 @@
+.home-section {
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  height: 700px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.home_content {
+  max-width: 500px;
+  color: white;
+  font-family: "Gantari", sans-serif;
+  margin-left: 10%;
+}
+
+.home_content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.home_content p {
+  font-size: 1rem;
+  margin: 20px 0;
+  margin-bottom: 25px;
+}
+
+.home_content button {
+  background-color: #d16751;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home_content button:hover {
+  background-color: #b45643;
+}
+
+@media (max-width: 768px) {
+  .home_content {
+    margin-left: 5%;
+  }
+
+  .home_content h1 {
+    font-size: 2rem;
+  }
+  .home_content p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,58 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+}
+.main_header {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.container {
+  width: 90%;
+  /* max-width: 1200px; change kariyu hatu */
+  max-width: 1740px;
+  margin: 0 auto;
+}
+
+.header_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: auto;
+  height: 60px;
+  background-color: aqua;
+  object-fit: contain;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-family: "Gantari", sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+  color: #d16751;
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

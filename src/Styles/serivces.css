@@ -1,0 +1,72 @@
+.services_main {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.our_s {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 6px 16px;
+  font-family: "Gantari", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.services_title {
+  margin: 20px 0 40px;
+  font-family: "Gantari", sans-serif;
+}
+
+.service_card {
+  padding: 20px;
+}
+
+.item_card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+}
+
+.service_content {
+  margin-top: 20px;
+}
+
+.gen {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.service_p {
+  font-size: 16px;
+  color: #555;
+}
+
+.explore {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.explore:hover {
+  text-decoration: underline;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services_main {
+    padding: 20px;
+  }
+}
