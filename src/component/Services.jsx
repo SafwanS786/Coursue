@@ -15,12 +15,12 @@ const servicesData = [
     description:
       "We handle full-scale building projects with precision and safety.",
   },
-  {
-    icon: frame1Img,
-    title: "Architectural Design",
-    description:
-      "Innovative designs that balance aesthetics and functionality.",
-  },
+  // {
+  //   icon: frame1Img,
+  //   title: "Architectural Design",
+  //   description:
+  //     "Innovative designs that balance aesthetics and functionality.",
+  // },
   {
     icon: frame2Img,
     title: "Commercial Projects",
