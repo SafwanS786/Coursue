@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import "../Styles/serivces.css";
 import frameImg from "../img/Frame.png";
 import frame1Img from "../img/Frame1.png";
 import frame2Img from "../img/Frame (2).png";
@@ -15,12 +15,12 @@ const servicesData = [
     description:
       "We handle full-scale building projects with precision and safety.",
   },
-  // {
-  //   icon: frame1Img,
-  //   title: "Architectural Design",
-  //   description:
-  //     "Innovative designs that balance aesthetics and functionality.",
-  // },
+  {
+    icon: frame1Img,
+    title: "Architectural Design",
+    description:
+      "Innovative designs that balance aesthetics and functionality.",
+  },
   {
     icon: frame2Img,
     title: "Commercial Projects",
@@ -38,7 +38,7 @@ export default function Services() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
