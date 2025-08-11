@@ -48,8 +48,11 @@ export default function Choose() {
           {features.map((feature, index) => (
             <div className="text_chs" key={index}>
               <div className="exp">
+                <img
+                  src={feature.icon}
+                  // style={{ width: "20px", height: "20px" }}
+                />
                 <div className="part_exp">
-                  <img src={feature.icon} />
                   <p className="head_exp">{feature.title}</p>
                 </div>
                 <div>

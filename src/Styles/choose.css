@@ -64,16 +64,25 @@
   font-size: 20px;
   line-height: 100%;
 }
+.exp img {
+  width: 50px;
+  height: 40px;
+}
 .exp {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .exp_para {
   margin: 32px;
   width: 361px;
-  height: 48px;
-  background-color: aqua;
+  height: 23px;
+  font-family: "Poppins";
+  color: #383838;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
   text-align: start;
-  /* margin: 20px; */
 }
 /* Responsive */
 @media (max-width: 768px) {
