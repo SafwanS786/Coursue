@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import OurProject from "./component/OurProject";
 import "./App.css";
+import "../src/Styles/global.css";
+import Feedback from "./component/FeedBack";
+import GetIn from "./component/GetInTouch";
 
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
       <Services />
       <Choose />
       <OurProject />
+      <Feedback />
+      <GetIn />
     </div>
   );
 }

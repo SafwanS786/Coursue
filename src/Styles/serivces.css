@@ -3,6 +3,7 @@
   padding: 50px 20px;
   background-color: #000000;
   color: #fff;
+  width: 100%;
 }
 
 .our_s {
@@ -76,7 +77,8 @@
 }
 
 .explore:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #000000;
 }
 
 .arrow {

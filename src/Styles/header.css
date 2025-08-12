@@ -5,30 +5,28 @@ body {
 .main_header {
   width: 90%;
   background-color: #fff;
-  /* padding: 10px 0; */
-  margin: 0;
+  padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
 
+/* .container { */
+/* width: 90%; */
+/* max-width: 1200px; change kariyu hatu */
+/* max-width: 1740px; */
+/* margin: 0 auto; */
+/* } */
 .container {
-  /* width: 90%; */
-  /* max-width: 1200px; change kariyu hatu */
-  /* max-width: 1740px; */
-  /* margin: 0 auto; */
+  max-width: 1440px;
+  width: 100%;
+  /* background-color: aqua; */
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Add padding to account for edges on smaller screens */
 }
-
 .header_flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-/* .logo img {
-  width: auto;
-  height: 60px;
-  background-color: aqua;
-  object-fit: contain;
-} */
 
 .nav ul {
   display: flex;

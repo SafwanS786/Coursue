@@ -6,6 +6,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 80px;
+}
+.our_project {
+  /* background-color: aqua; */
+  width: 1360px;
+  height: 648px;
+}
+.imge {
+  display: flex;
+  gap: 10px;
+}
+.imge img {
+  padding: 10px;
+  width: 450px;
+  height: 450px;
+  border-radius: 10px;
+  gap: 10px;
 }
 .content_p {
   width: 85%;

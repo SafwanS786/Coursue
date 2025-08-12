@@ -1,0 +1,64 @@
+.Get_main_class {
+  position: relative;
+  background-image: url("../img/touch.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position:  20%;
+  display: flex;
+  /* background-repeat: no-repeat; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00000099;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+.Get_main_class::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+.Get_main_class * {
+  position: relative;
+  z-index: 2; /* Make text appear above overlay */
+}
+#get_para {
+  font-family: "Gantari";
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  width: fit-content;
+  color: #ffffff;
+  height: 20px;
+  border-radius: 30px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#get_heading {
+  font-size: 32px; /* Adjust based on design */
+  font-weight: 700;
+  margin-bottom: 10px; /* Space between heading and button */
+  /* background-color: aqua; */
+  color: #ffffff;
+}
+.get_subtext {
+  font-family: "Poppins";
+  height: 48px;
+  width: 500px;
+  color: #eeeeee;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.get_button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
