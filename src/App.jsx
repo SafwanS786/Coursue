@@ -10,6 +10,7 @@ import "./App.css";
 import "../src/Styles/global.css";
 import Feedback from "./component/FeedBack";
 import GetIn from "./component/GetInTouch";
+import LatestNews from "./component/LatestNews";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <OurProject />
       <Feedback />
       <GetIn />
+      <LatestNews />
     </div>
   );
 }
