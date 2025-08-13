@@ -10,14 +10,17 @@ export default function Header() {
         <div className="Header_logo_class">
           <img src={Header_logo} alt="Company Logo" />
         </div>
-        <div
+        <button
           className="toggle_menu"
           onClick={() => {
             return setMenuOpen(!MenuOpen);
           }}
+          aria-expanded={MenuOpen}
+          aria-controls="nav-menu"
+          aria-label={MenuOpen ? "Close menu" : "Open menu"}
         >
-          ☰
-        </div>
+          {MenuOpen ? "×" : "☰"}
+        </button>
         <nav className={`nav ${MenuOpen ? "active" : ""}`}>
           <ul>
             <li>

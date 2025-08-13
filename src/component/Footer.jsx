@@ -56,18 +56,18 @@ export default function Footer() {
           <ul>
             <li>
               <a href="/home" className="active">
-                HOME
+                Home
               </a>
             </li>
             <li>
-              <a href="/about_us">ABOUT US</a>
+              <a href="/about_us">About Us</a>
             </li>
             <li>
-              <a href="/projects">PROJECTS</a>
+              <a href="/projects">Projects</a>
             </li>
 
             <li>
-              <a href="/blog">BLOG</a>
+              <a href="/blog">Blog</a>
             </li>
           </ul>
         </nav>
@@ -90,10 +90,11 @@ export default function Footer() {
             <FaMapMarkerAlt /> <p>123 Health Ave, Wellness City, ST 00000</p>
           </li>
           <li>
-            <FaPhoneAlt /> (800) 123-4567
+            <FaPhoneAlt /> <p>(800) 123-4567</p>
           </li>
           <li>
-            <FaEnvelope /> info@generalhospital.com
+            <FaEnvelope />
+            <p> info@generalhospital.com</p>
           </li>
         </ul>
       </div>
