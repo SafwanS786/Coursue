@@ -7,13 +7,14 @@ import {
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 export default function Footer() {
   return (
     <div className="Main_Footer_class">
       <div className="Footer_Logo">
         <img src={f_logo} />
         {/* <div className="Footer_para"> */}
-        <p>
+        <p id="foot_para">
           we’re committed to elevating the construction experience for our
           clients.
         </p>
@@ -50,7 +51,7 @@ export default function Footer() {
       </div>
       {/* </div> */}
       <div className="Footer_column">
-        <p>Quick Link</p>
+        <p id="footer_heading">Quick Link</p>
         <nav className="Footer_nav">
           <ul>
             <li>
@@ -71,8 +72,31 @@ export default function Footer() {
           </ul>
         </nav>
       </div>
-      <div></div>
-      <div></div>
+      <div className="Footer_column">
+        <p id="footer_heading">Quick Services</p>
+        <ul>
+          <li>General Construction</li>
+          <li>Architectural Design</li>
+          <li>Site Supervision</li>
+          <li>Renovation Services</li>
+          <li>Commercial Projects</li>
+          <li>Residential Buildings</li>
+        </ul>
+      </div>
+      <div className="Footer_column">
+        <p className="footer-heading">Contact Us</p>
+        <ul className="footer-contact">
+          <li>
+            <FaMapMarkerAlt /> <p>123 Health Ave, Wellness City, ST 00000</p>
+          </li>
+          <li>
+            <FaPhoneAlt /> (800) 123-4567
+          </li>
+          <li>
+            <FaEnvelope /> info@generalhospital.com
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }

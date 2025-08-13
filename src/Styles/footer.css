@@ -7,9 +7,13 @@
   gap: 40px;
   padding: 60px 10%;
   color: white;
+  /* background-color: aqua; */
 }
 .Footer_Logo {
-  width: 10%;
+  /* background-color: aqua; */
+  flex: 1;
+  max-width: 250px;
+  /* width: 10%; */
   /* background-color: aqua; */
   padding: 18px;
   margin-left: 10%;
@@ -20,11 +24,23 @@
   /* width: 100px; */
   width: clamp(100px, 15%, 100px);
   height: auto;
+  margin-bottom: 10px;
 }
+#foot_para {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Poppins";
+  /* background-color: aqua; */
+}
+
 .social-icons {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 15px;
   margin-top: 15px;
+  flex-wrap: nowrap;
 }
 
 .social-icons a {
@@ -36,12 +52,33 @@
 .social-icons a:hover {
   color: #ff6600; /* highlight color */
 }
+.Footer_column {
+  min-width: 200px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  /* background-color: aqua; */
+}
 .Footer_nav {
   /* background-color: aqua; */
   color: #ffffff;
 }
-.Footer_nav ul {
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.Footer_nav ul,
+.Footer_column ul {
   list-style: none;
+  padding: 0;
+}
+.Footer_column ul li,
+.Footer_nav ul li {
+  padding: 10px 0;
+}
+.Footer_column ul li {
+  /* background-color: crimson; */
   padding: 10px;
 }
 .Footer_nav ul li {
@@ -55,4 +92,18 @@
 .Footer_nav ul li a.active,
 .Footer_nav ul li a:hover {
   color: #d16751;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.footer-contact li {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.footer-contact p {
+  width: 158px;
+  margin: 0;
 }
