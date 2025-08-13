@@ -3,12 +3,24 @@ body {
   margin: 0;
 }
 .main_header {
-  width: 90%;
+  /* width: 90%; */
+  width: 100%;
   background-color: #fff;
+  /* background-color: aqua; */
   padding: 10px 0;
   border-bottom: 1px solid #eee;
 }
 
+.Header_logo_class img {
+  max-width: 180px;
+  height: auto;
+  width: 48px;
+}
+
+/* .logo {
+  background-color: aqua;
+  color: black;
+} */
 /* .container { */
 /* width: 90%; */
 /* max-width: 1200px; change kariyu hatu */
@@ -26,13 +38,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .nav ul {
   display: flex;
   list-style: none;
   gap: 30px;
+  /* background-color: aqua; */
   margin: 0;
+  flex-wrap: wrap;
   /* padding: 0; */
 }
 
@@ -47,9 +62,36 @@ body {
 .nav ul li a:hover {
   color: #d16751;
 }
-
+.toggle_menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  /* background-color: aqua; */
+  margin-left: auto;
+}
+@media (max-width: 480px) {
+  .Header_logo_class img {
+    max-width: 120px; /* even smaller for very small phones */
+  }
+}
 @media (max-width: 768px) {
+  .Header_logo_class img {
+    max-width: 140px;
+    color: aqua;
+  }
+  .nav {
+    display: none;
+    width: 100%;
+  }
+  .nav.active {
+    display: block;
+  }
+  .toggle_menu {
+    display: block;
+  }
   .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 10px;
   }

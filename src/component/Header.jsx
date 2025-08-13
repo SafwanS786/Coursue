@@ -1,15 +1,24 @@
-import React from "react";
-import logo from "../img/c_logo.jpg";
+import React, { useState } from "react";
+import Header_logo from "../img/c_logo.jpg";
 import "../styles/header.css";
 
 export default function Header() {
+  const [MenuOpen, setMenuOpen] = useState(false);
   return (
     <header className="main_header">
       <div className="container header_flex">
-        <div className="logo">
-          <img src={logo} alt="Company Logo" />
+        <div className="Header_logo_class">
+          <img src={Header_logo} alt="Company Logo" />
         </div>
-        <nav className="nav">
+        <div
+          className="toggle_menu"
+          onClick={() => {
+            return setMenuOpen(!MenuOpen);
+          }}
+        >
+          ☰
+        </div>
+        <nav className={`nav ${MenuOpen ? "active" : ""}`}>
           <ul>
             <li>
               <a href="/home" className="active">
