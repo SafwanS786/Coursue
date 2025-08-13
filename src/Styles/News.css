@@ -1,9 +1,10 @@
 .latest-news {
   width: 100%;
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 5%;
   text-align: center;
   margin-top: 5%;
+  padding: 15px 110px;
 }
 #news {
   display: flex;
@@ -47,10 +48,35 @@
   font-size: 20px;
   line-height: 100%;
   color: #000;
+  /* text-align: start; */
 }
 #h {
-  /* color: #dddddd; */
-  color: aqua;
+  color: #dddddd;
+  /* color: aqua; */
+  border: 1px solid #dddddd;
 
+  background-color: aqua;
+}
+#state {
   /* background-color: aqua; */
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  width: 320px;
+  height: auto;
+  /* margin: 0; */
+  margin: 0 0 10% 0;
+  text-align: start;
+}
+.Transformative_Approaches,
+.Modern,
+.top {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  height: auto;
+  /* background-color: aqua; */
+  /* justify-content: space-between; */
+  text-align: justify;
 }

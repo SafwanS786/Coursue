@@ -1,0 +1,58 @@
+.Main_Footer_class {
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 10%;
+  color: white;
+}
+.Footer_Logo {
+  width: 10%;
+  /* background-color: aqua; */
+  padding: 18px;
+  margin-left: 10%;
+}
+.Footer_Logo img {
+  /* width: 20%; */
+  /* max-width: 80px; */
+  /* width: 100px; */
+  width: clamp(100px, 15%, 100px);
+  height: auto;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6600; /* highlight color */
+}
+.Footer_nav {
+  /* background-color: aqua; */
+  color: #ffffff;
+}
+.Footer_nav ul {
+  list-style: none;
+  padding: 10px;
+}
+.Footer_nav ul li {
+  gap: 20px;
+  padding: 10px;
+}
+.Footer_nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.Footer_nav ul li a.active,
+.Footer_nav ul li a:hover {
+  color: #d16751;
+}

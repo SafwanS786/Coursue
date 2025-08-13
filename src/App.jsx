@@ -11,7 +11,7 @@ import "../src/Styles/global.css";
 import Feedback from "./component/FeedBack";
 import GetIn from "./component/GetInTouch";
 import LatestNews from "./component/LatestNews";
-
+import Footer from "./component/Footer";
 function App() {
   return (
     <div className="main_container">
@@ -24,6 +24,7 @@ function App() {
       <Feedback />
       <GetIn />
       <LatestNews />
+      <Footer />
     </div>
   );
 }

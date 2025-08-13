@@ -13,14 +13,43 @@ export default function LatestNews() {
           <img src={transform} alt="Transformative" />
           <div className="content_news">
             <p>Transformative Approaches in</p>
-            <hr id="h"/>
+            <hr id="h" />
+            <p id="state">
+              Our team brings decades of experience across commercial and
+              residential projects.
+            </p>
+            <a className="explore" href="#">
+              Read More <span className="arrow">→</span>
+            </a>
           </div>
         </div>
         <div className="Modern">
           <img src={model} />
+          <div className="content_news">
+            <p>Modern Construction Techniques</p>
+            <hr id="h" />
+            <p id="state">
+              Our team brings decades of experience across commercial and
+              residential projects.
+            </p>
+            <a className="explore" href="#">
+              Read More <span className="arrow">→</span>
+            </a>
+          </div>
         </div>
         <div className="top">
           <img src={Top} />
+          <div className="content_news">
+            <p>Modern Construction Techniques</p>
+            <hr id="h" />
+            <p id="state">
+              Our team brings decades of experience across commercial and
+              residential projects.
+            </p>
+            <a className="explore" href="#">
+              Read More <span className="arrow">→</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
