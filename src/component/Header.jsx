@@ -5,8 +5,8 @@ import "../styles/header.css";
 export default function Header() {
   const [MenuOpen, setMenuOpen] = useState(false);
   return (
-    <header className="main_header">
-      <div className="container header_flex">
+    <header className="container main_header">
+      <div className="header_flex">
         <div className="Header_logo_class">
           <img src={Header_logo} alt="Company Logo" />
         </div>

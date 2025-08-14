@@ -4,7 +4,7 @@ import Ellipse from "../img/Ellipse.png";
 import Ellipse1 from "../img/Ellipse1.png";
 export default function Feedback() {
   return (
-    <div className="Feed_main">
+    <div className="container Feed_main">
       <p id="feed_para">TESTIMONIAL</p>
       {/* <p>TESTIMONIAL</p> */}
       <h1 id="head_para">Client Feedback and Success Stories</h1>

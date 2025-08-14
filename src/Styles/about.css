@@ -1,13 +1,16 @@
 .about-section {
   background-color: white;
+  /* background-color: yellow; */
   padding: 100px 0;
+  width: 100%;
 }
 
 .about-container {
   display: flex;
-  /* align-items: center; */
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: stretch;
+  /* justify-content: space-between; */
+  justify-content: end;
+
   max-width: 1200px;
   margin: auto;
   gap: 50px;
@@ -20,13 +23,13 @@
 
 .about-label {
   display: inline-block;
-  padding: 5px 15px;
+  padding: 0.3em 0.9em;
   background-color: #f2f2f2;
   border: 1px solid #000;
   border-radius: 30px;
   font-size: 0.9rem;
   font-weight: 500;
-  border-radius: 20px;
+  white-space: nowrap;
 }
 .about-content h2 {
   font-size: 2.5rem;
@@ -44,15 +47,15 @@
 
 .numb {
   display: flex;
-  gap: 48px;
+  gap: 3rem;
   /* margin-top: 30px; */
-  margin-top: 57%;
+  margin-top: 2rem;
   font-weight: 700;
-  font-size: 20px;
-  height: 118px;
-  width: 609px;
+  font-size: 1.25rem;
+  width: 100%; /* takes available space */
+  /* max-width: 600px; */
 }
-#cp {
+/* #cp {
   font-size: 20px;
   font-family: "Gantari";
   font-weight: 500;
@@ -60,10 +63,30 @@
   color: #000000;
   width: 169px;
   height: 48px;
+} */
+.numb > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* or center if you want centered text */
 }
-
+.numb h1 {
+  margin: 0;
+  font-size: 2rem; /* adjust to match Figma */
+}
+#cp {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+  font-family: "Gantari";
+}
+.about-image {
+  display: flex; /* Add this */
+}
 .about-image img {
-  width: 30%;
+  height: 100%; /* Changed from fixed height to 100% */
+  width: 100%; /* Changed from fixed width to 100% */
+  object-fit: cover; /* Add this to maintain aspect ratio */
   border-radius: 10px;
 }
 

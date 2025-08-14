@@ -5,7 +5,7 @@ import model from "../img/Modern.png";
 import Top from "../img/Top.png";
 export default function LatestNews() {
   return (
-    <div className="latest-news">
+    <div className="container latest-news">
       <p id="news">LATEST NEWS</p>
       <h1 id="news_para">Stay Updated With Our Blog</h1>
       <div className="news_img">

@@ -5,7 +5,7 @@ import villa from "../img/residential-modern-villa.png";
 import work from "../img/work.png";
 export default function OurProject() {
   return (
-    <div className="main_our">
+    <div className="container main_our">
       <div className="our_project">
         <div className="content_p">
           <p id="para_our">Our Projects</p>

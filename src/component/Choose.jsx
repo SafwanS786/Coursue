@@ -35,7 +35,7 @@ const features = [
 
 export default function Choose() {
   return (
-    <div className="main_chs">
+    <div className="container main_chs">
       <p className="label_chs">WHY CHOOSE US</p>
       <h1 className="head_chs">
         Delivering Quality Construction with Confidence

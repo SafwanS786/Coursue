@@ -49,7 +49,7 @@ export default function Services() {
   };
 
   return (
-    <div className="services_main">
+    <div className="container services_main">
       <p className="our_s">OUR SERVICES</p>
       <h1 className="services_title">What We Offer</h1>
       <Slider {...settings}>

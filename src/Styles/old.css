@@ -1,0 +1,279 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Gantari";
+}
+.main_header {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.Header_logo_class img {
+  width: clamp(80px, 6vw, 100px);
+  height: auto;
+}
+
+.container {
+  /* max-width: 1820px; */
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.header_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 60px;
+  width: 100%;
+  /* background-color: aqua; */
+}
+/* Mobile-first: Hide nav by default on small screens */
+.nav {
+  display: none;
+  width: 100%;
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+.nav.active {
+  display: block;
+  margin-top: 1rem; /* Space below logo/toggle */
+  animation: slideDown 0.3s ease-in-out;
+  /* background-color: aqua; */
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: column; /* Stack on mobile */
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  display: block; /* Full width for touch on mobile */
+  padding: 0.5rem 0; /* Better touch targets */
+}
+
+.nav ul li a.active,
+.nav ul li a:hover {
+  color: #d16751;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 2px;
+}
+
+.toggle_menu {
+  display: block; /* Show on mobile */
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.toggle_menu:hover {
+  transform: scale(1.1);
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .nav ul {
+    gap: 1.5rem; /* Slightly smaller gap for tablets */
+  }
+}
+
+/* Desktop breakpoint */
+@media (min-width: 1024px) {
+  .toggle_menu {
+    display: none; /* Hide toggle on desktop */
+  }
+
+  .nav {
+    display: block; /* Always show on desktop */
+    width: auto;
+  }
+
+  .nav ul {
+    flex-direction: row; /* Horizontal on desktop */
+    gap: 2rem; /* Larger gap */
+  }
+}
+/* ----------------- */
+.home-section {
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  /* height: 700px; */
+  min-height: 100vh;
+  height: 900px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 20px;
+}
+
+.home_content {
+  max-width: 500px;
+  color: white;
+  font-family: "Gantari", sans-serif;
+  margin-left: 10%;
+}
+
+.home_content h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.home_content p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  margin: 20px 0;
+  margin-bottom: 25px;
+}
+
+.home_content button {
+  background-color: #d16751;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.home_content button:hover {
+  background-color: #b45643;
+}
+
+@media (max-width: 768px) {
+  .home_content {
+    margin-left: 0;
+  }
+}
+@media (max-width: 480px) {
+  .home_content {
+    max-width: 100%; /* use full width */
+    text-align: center; /* center align on mobile */
+  }
+  .home_content h1 {
+    font-size: 1.8rem;
+  }
+  .home_content p {
+    font-size: 0.95rem;
+  }
+  .home_content button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+/* -----------------------------------------------------------------about.css-- */
+.about-section {
+  background-color: white;
+  padding: 100px 0;
+}
+
+.about-container {
+  display: flex;
+  /* align-items: center; */
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* max-width: 1200px; */
+  margin: auto;
+  gap: 50px;
+  /* padding: 0 20px; */
+}
+.about-content {
+  flex: 1;
+  font-family: "Gantari", sans-serif;
+  /* margin-bottom: 55%; */
+}
+
+.about-label {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  background-color: #f2f2f2;
+  border: 1px solid #000;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.about-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about-btn {
+  background-color: #d16751;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.numb {
+  display: flex;
+  gap: 3rem;
+  /* margin-top: 30px; */
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  flex-wrap: wrap;
+  width: 100%; /* takes available space */
+  max-width: 600px;
+}
+#cp {
+  font-size: 20px;
+  font-family: "Gantari";
+  font-weight: 500;
+  line-height: 100%;
+  color: #000000;
+  width: 169px;
+  height: 48px;
+}
+
+.about-image img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+}
