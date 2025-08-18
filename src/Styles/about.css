@@ -1,22 +1,26 @@
 .about-section {
   background-color: white;
   /* background-color: yellow; */
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding-top: 100px;
   width: 100%;
 }
 
 .about-container {
   display: flex;
-  align-items: stretch;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  /* align-items: stretch; */
   /* justify-content: space-between; */
-  justify-content: end;
-
-  max-width: 1200px;
-  margin: auto;
+  justify-content: center;
+  /* margin: auto; */
   gap: 50px;
+  margin: 0 auto; /* Center the container */
 }
 .about-content {
   flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   font-family: "Gantari", sans-serif;
   /* margin-bottom: 55%; */
 }
@@ -46,6 +50,7 @@
 }
 
 .numb {
+  /* margin-top: 55%; */
   display: flex;
   gap: 3rem;
   /* margin-top: 30px; */
@@ -84,7 +89,9 @@
   display: flex; /* Add this */
 }
 .about-image img {
-  height: 100%; /* Changed from fixed height to 100% */
+  /* height: 100%; Changed from fixed height to 100% */
+  height: auto;
+  max-width: 590px;
   width: 100%; /* Changed from fixed width to 100% */
   object-fit: cover; /* Add this to maintain aspect ratio */
   border-radius: 10px;
@@ -93,5 +100,18 @@
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
+    text-align: center;
+  }
+  .numb {
+    justify-content: center;
+  }
+  .numb > div {
+    align-items: center;
+  }
+}
+/* Responsive adjustments */
+@media (min-width: 769px) {
+  .numb {
+    margin-top: 4rem; /* Larger margin for desktop */
   }
 }

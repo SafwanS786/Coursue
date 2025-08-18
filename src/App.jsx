@@ -14,7 +14,7 @@ import LatestNews from "./component/LatestNews";
 import Footer from "./component/Footer";
 function App() {
   return (
-    <div className="main_container">
+    <div className="">
       <Header />
       <Home />
       <About />

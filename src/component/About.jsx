@@ -7,14 +7,16 @@ export default function About() {
     <section className="container about-section">
       <div className="about-container">
         <div className="about-content">
-          <span className="about-label">ABOUT US</span>
-          <h2>We Craft Digital Experiences That Drive Results</h2>
-          <p>
-            We're a creative team focused on designing and building digital
-            experiences that are both beautiful and functional. Our goal is to
-            help brands stand out and connect with their audience.
-          </p>
-          <button className="about-btn">Read More</button>
+          <div className="dif">
+            <span className="about-label">ABOUT US</span>
+            <h2>We Craft Digital Experiences That Drive Results</h2>
+            <p>
+              We're a creative team focused on designing and building digital
+              experiences that are both beautiful and functional. Our goal is to
+              help brands stand out and connect with their audience.
+            </p>
+            <button className="about-btn">Read More</button>
+          </div>
           <div className="numb">
             <div>
               <h1>678+</h1>
@@ -34,7 +36,7 @@ export default function About() {
           <img
             src={aboutImg}
             alt="About Us"
-            style={{ height: "840px", width: "590px" }}
+            // style={{ height: "840px", width: "590px" }}
           />
         </div>
       </div>

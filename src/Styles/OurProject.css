@@ -6,12 +6,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px;
+  padding: 80px 0;
+  box-sizing: border-box;
 }
 .our_project {
-  /* background-color: aqua; */
-  width: 1360px;
-  height: 648px;
+  width: 100%;
+  max-width: 1200px; /* no fixed width */
+  margin: 0 auto;
+  height: auto; /* let content decide */
+  padding: 0 20px; /* optional inner padding */
+  box-sizing: border-box;
 }
 .imge {
   display: flex;
