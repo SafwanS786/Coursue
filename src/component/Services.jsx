@@ -31,15 +31,37 @@ const servicesData = [
     title: "Renovation Services",
     description: "Transforming spaces while maintaining structural integrity.",
   },
+  {
+    icon: frameImg,
+    title: "General Construction",
+    description:
+      "We handle full-scale building projects with precision and safety.",
+  },
+  {
+    icon: frame1Img,
+    title: "Architectural Design",
+    description:
+      "Innovative designs that balance aesthetics and functionality.",
+  },
+  {
+    icon: frame2Img,
+    title: "Commercial Projects",
+    description: "Professional execution of large-scale commercial builds.",
+  },
+  {
+    icon: frame3Img,
+    title: "Renovation Services",
+    description: "Transforming spaces while maintaining structural integrity.",
+  },
 ];
 
 export default function Services() {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 200,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
     responsive: [

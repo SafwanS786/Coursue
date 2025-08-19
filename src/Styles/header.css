@@ -11,25 +11,15 @@ body {
 }
 
 .container {
-  /* max-width: 1800px; */
-  /* margin: 0 auto; */
+  max-width: 100%;
   padding: 0 4rem;
-  /* width: 100%; */
-  /* background-color: #d16751; */
   background-color: crimson;
-  /* !important; */
+  box-sizing: border-box;
 }
-/* .container {
-  width: 100%;
-  max-width: 1200px;  /or any width you like for text /
-  margin: 0 auto;
-  padding: 0 20px;
-} */
 
 .main_header {
   width: 100%;
   background-color: #fff;
-  /* padding: 0.5rem 0; */
   border-bottom: 1px solid #eee;
   position: relative;
 }
@@ -147,5 +137,22 @@ body {
 @media (max-width: 1400px) {
   .container {
     max-width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 2rem; /* Laptops */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem; /* Tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem; /* Mobiles */
   }
 }
