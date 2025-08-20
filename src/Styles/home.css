@@ -1,6 +1,7 @@
 .home-section {
   width: 100%;
   min-height: 100vh;
+  /* background-size: contain; */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,6 +50,8 @@
   background-color: #b45643;
 }
 
+/*  */
+
 @media (max-width: 768px) {
   .home_content {
     margin-left: 0;
@@ -57,10 +60,12 @@
     padding: 0 1rem;
   }
 }
+
 @media (max-width: 480px) {
   .home_content {
     max-width: 100%; /* use full width */
     text-align: center; /* center align on mobile */
+    /* background-color: aqua; */
   }
   .home_content h1 {
     font-size: 1.8rem;
@@ -71,5 +76,9 @@
   .home_content button {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+  .home-section {
+    background-size: cover;
+    background-position: top; /* show important part on mobile */
   }
 }

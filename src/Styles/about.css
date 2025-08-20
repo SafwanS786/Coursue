@@ -40,18 +40,23 @@
   justify-content: space-around;
   font-family: "Gantari", sans-serif;
 }
+.about-content p {
+  font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
 .about-label {
   display: inline-block;
   padding: 0.3em 0.9em;
   background-color: #f2f2f2;
   border: 1px solid #000;
   border-radius: 30px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   white-space: nowrap;
 }
 .about-content h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -62,6 +67,10 @@
   color: #fff;
   border-radius: 5px;
   margin-top: 20px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  margin-top: 15px;
 }
 
 .numb {
@@ -91,14 +100,14 @@
 }
 .numb h1 {
   margin: 0;
-  font-size: 3.5rem; /* adjust to match Figma */
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
   font-weight: 900;
   color: #000;
   line-height: 1.2;
   font-weight: bolder;
 }
 #cp {
-  font-size: 1.1rem;
+  font-size: clamp(0.85rem, 1.5vw, 1rem);
   font-weight: 500;
   margin-top: 0.5rem;
   line-height: 1.4;
@@ -122,9 +131,10 @@
 
 .about-image img {
   /* height: 840px; */
-  height: 70vh;
+  /* height: 70vh; */
+  height: auto;
   width: 100%;
-  max-width: 570px;
+  max-width: 500px;
   object-fit: cover;
   border-radius: 10px;
   margin-top: 5%;
@@ -132,11 +142,11 @@
 
 @media (max-width: 768px) {
   .about-section {
-    flex-direction: column;
     text-align: center;
   }
   .numb {
     justify-content: center;
+    gap: 2rem;
   }
   .numb > div {
     align-items: center;

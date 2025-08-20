@@ -1,13 +1,28 @@
 import React from "react";
 import "../Styles/News.css";
+import { motion } from "framer-motion";
 import transform from "../img/Transformative.png";
 import model from "../img/Modern.png";
 import Top from "../img/Top.png";
 export default function LatestNews() {
   return (
     <div className="container latest-news">
-      <p id="news">LATEST NEWS</p>
-      <h1 id="news_para">Stay Updated With Our Blog</h1>
+      <motion.p
+        id="news"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        LATEST NEWS
+      </motion.p>
+      <motion.h1
+        id="news_para"
+        initial={{ opacity: 0, scale: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        Stay Updated With Our Blog
+      </motion.h1>
       <div className="news_img">
         <div className="Transformative_Approaches">
           <img src={transform} alt="Transformative" />

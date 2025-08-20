@@ -1,5 +1,4 @@
 .main_our {
-  width: 100%;
   background-color: #000000;
   /* margin-top: 60px; */
   /* margin-bottom: 30px; */
@@ -21,11 +20,12 @@
 }
 .imge {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   /* responsive */
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   /* justify-content: center; */
+  /* align-items: center; */
 }
 .imge img {
   width: 500px;
@@ -67,11 +67,14 @@
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  flex: 1 1 300px; /* responsive card width */
 }
 
 .image-card img {
-  width: 500px;
-  height: 550px;
+  width: 100%; /* take full width of parent */
+  height: auto;
+  /* width: 500px;
+  height: 550px; */
   border-radius: 10px;
   object-fit: cover;
   display: block;
@@ -79,17 +82,26 @@
 
 /* hidden hover box */
 .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
   position: absolute;
   bottom: 20px;
   left: 20px;
+  /* left: 10%; */
+
   /* background: #fff; */
   background-color: #ffffff;
   /* background-color: aqua; */
   padding: 10px 20px;
   border-radius: 10px;
   opacity: 0;
-  width: 50%;
-  height: auto;
+  width: 70%;
+  /* width: 80%; */
+  height: 20%;
+  /* width: 50%;*/
+  /* height: auto; */
   transform: translateY(20px);
   transition: all 0.3s ease;
 }
@@ -102,14 +114,20 @@
 
 .overlay p {
   margin: 0;
-  font-size: 14px;
-  font-weight: 500;
-  color: #555;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
 }
 
 .overlay h3 {
   margin: 5px 0 0;
-  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #000;
+}
+.arr {
+  display: inline-block;
+  transform: rotate(-45deg);
+  color: #d16751;
+  /* background-color: aqua; */
 }

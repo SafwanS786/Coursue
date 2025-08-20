@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Feedback.css";
+import { motion } from "framer-motion";
 import Ellipse from "../img/Ellipse.png";
 import Ellipse1 from "../img/Ellipse1.png";
 import Slider from "react-slick";
@@ -85,9 +86,23 @@ export default function Feedback() {
   };
   return (
     <div className="container Feed_main bg-light">
-      <p id="feed_para">TESTIMONIAL</p>
+      <motion.p
+        id="feed_para"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        TESTIMONIAL
+      </motion.p>
       {/* <p>TESTIMONIAL</p> */}
-      <h1 id="head_para">Client Feedback and Success Stories</h1>
+      <motion.h1
+        id="head_para"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        Client Feedback and Success Stories
+      </motion.h1>
       <div className="feedback-cards">
         <Slider {...Feedsettings}>
           {FeedContent.map((Feed, index) => (

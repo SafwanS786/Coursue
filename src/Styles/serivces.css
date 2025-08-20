@@ -34,8 +34,11 @@
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: 350px;
-  height: 350px;
+  /* width: 350px;
+  height: 350px; */
+  min-width: 280px; /* keep a good minimum */
+  max-width: 100%; /* allow responsive scaling */
+  height: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -108,6 +111,10 @@
 .slick-dots li.slick-active button:before {
   color: #d16751; /* your theme color */
   opacity: 1;
+}
+.explore:hover .arrow {
+  transform: translateX(5px) rotate(-45deg);
+  transition: 0.3s ease;
 }
 
 /* Responsive */

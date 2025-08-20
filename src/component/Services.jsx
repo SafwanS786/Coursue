@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/serivces.css";
@@ -72,24 +73,65 @@ export default function Services() {
 
   return (
     <div className="container services_main">
-      <p className="our_s">OUR SERVICES</p>
-      <h1 className="services_title">What We Offer</h1>
+      <motion.p
+        className="our_s"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+        OUR SERVICES
+      </motion.p>
+      <motion.h1
+        className="services_title"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        What We Offer
+      </motion.h1>
       <Slider {...settings}>
         {servicesData.map((service, index) => (
-          <div className="service_card" key={index}>
+          <motion.div
+            className="service_card"
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{
+              scale: 1.1,
+              y: -1,
+              boxShadow: "0 8px 2px rgba(0,0,0,0.2)",
+            }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
             <div className="item_card">
-              <div className="logo">
+              <motion.div
+                className="logo"
+                whileHover={{ rotate: 10, scale: 1.1 }}
+                transition={{ type: "spring", stiffness: 200 }}
+              >
                 <img src={service.icon} alt={service.title} />
-              </div>
+              </motion.div>
               <div className="service_content">
-                <h3 className="gen">{service.title}</h3>
+                <motion.h3
+                  className="gen"
+                  whileHover={{ color: "#d16751" }}
+                  transition={{ duration: 0.3 }}
+                >
+                  {service.title}
+                </motion.h3>
                 <p className="service_p">{service.description}</p>
-                <a className="explore" href="#">
+                <motion.a
+                  className="explore"
+                  href="#"
+                  whileHover={{ x: 5 }}
+                  transition={{ duration: 0.3 }}
+                >
                   Explore More <span className="arrow">→</span>
-                </a>
+                </motion.a>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </Slider>
     </div>

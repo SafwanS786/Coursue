@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import aboutImg from "../img/c_image.jpg";
+import { motion } from "framer-motion";
 import "../styles/about.css";
 
 export default function About() {
@@ -68,7 +69,12 @@ export default function About() {
     <section className="container about-section">
       <div className="about-container">
         <div className="about-content">
-          <div className="dif">
+          <motion.div
+            className="dif"
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <span className="about-label">ABOUT US</span>
             <h2>We Craft Digital Experiences That Drive Results</h2>
             <p>
@@ -76,9 +82,23 @@ export default function About() {
               experiences that are both beautiful and functional. Our goal is to
               help brands stand out and connect with their audience.
             </p>
-            <button className="about-btn">Read More</button>
-          </div>
-          <div className="numb">
+            <motion.button
+              className="about-btn"
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: "#b45643",
+              }}
+              whileTap={{ scale: 0.9 }}
+            >
+              Read More
+            </motion.button>
+          </motion.div>
+          <motion.div
+            className="numb"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <div>
               <h1 onClick={ProjectHandle}>{project}+</h1>
               <p id="cp">Complete Projects</p>
@@ -91,15 +111,20 @@ export default function About() {
               <h1 onClick={handleClient}>{client}%</h1>
               <p id="cp">Client Satisfaction Rate</p>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="about-image">
+        <motion.div
+          className="about-image"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <img
             src={aboutImg}
             alt="About Us"
             // style={{ height: "840px", width: "590px" }}
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

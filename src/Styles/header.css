@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 100%;
+  width: 100%;
   padding: 0 4rem;
   background-color: crimson;
   box-sizing: border-box;
@@ -27,6 +27,11 @@ body {
 .Header_logo_class img {
   width: clamp(60px, 6vw, 60px);
   height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.Header_logo_class img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
 .header_flex {
@@ -105,11 +110,12 @@ body {
 /* MOBILE */
 @media (max-width: 767px) {
   .header_flex {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .nav ul {
-    gap: 1rem;
+    width: 100%;
   }
 }
 
