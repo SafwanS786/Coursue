@@ -36,13 +36,15 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   /* width: 350px;
   height: 350px; */
-  min-width: 280px; /* keep a good minimum */
-  max-width: 100%; /* allow responsive scaling */
-  height: auto;
+  width: 100%;
+  max-width: 300px; /* instead of fixed 350px */
+  height: auto; /* let content decide */
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
+  margin: auto;
 }
 
 .logo img {
@@ -56,15 +58,16 @@
 }
 
 .gen {
-  font-size: 20px;
+  font-size: clamp(1rem, 1.2vw, 1.4rem);
   margin: 0 0 10px;
   color: #000000;
   font-weight: 600;
   text-align: start;
+  /* background-color: yellow; */
 }
 
 .service_p {
-  font-size: 16px;
+  font-size: clamp(0.9rem, 1vw, 1rem);
   color: #383838;
   font-weight: 400;
   font-family: "Poppins";
@@ -73,6 +76,10 @@
   height: 72px;
   /* line-height: 100%; */
   /* background-color: aqua; */
+}
+.logo img {
+  width: 70px;
+  height: auto;
 }
 
 .explore {
