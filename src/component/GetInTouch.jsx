@@ -31,7 +31,7 @@ export default function GetInTouch() {
         your vision to life.
       </motion.p>
       {/* <motion.button
-        className="get_button"
+         className="get_button"
         whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.3)" }}
         transition={{ duration: 0.3 }}
       >
