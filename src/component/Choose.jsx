@@ -64,6 +64,7 @@ export default function Choose() {
         >
           <img src={choseImg} alt="Why Choose Us" />
         </motion.div>
+        {/*------------------------------------------------Down Part Start--------------------------------  */}
         <div className="features_chs">
           {features.map((feature, index) => (
             <div className="text_chs" key={index}>

@@ -135,4 +135,9 @@
     width: 36px;
     max-height: 36px;
   }
+  .item_card {
+    width: 10%;
+    height: 10%;
+    background-color: aqua;
+  }
 }

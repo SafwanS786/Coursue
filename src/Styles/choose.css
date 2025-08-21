@@ -88,9 +88,65 @@
   text-align: start;
 }
 /* Responsive */
+/* @media (max-width: 768px) {
+  .content_chs1 {
+    align-items: center;
+    background-color: blueviolet;
+  }
+} */
 @media (max-width: 768px) {
   .content_chs1 {
+    margin-top: -3rem;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .features_chs {
+    width: 90%;
+    text-align: center;
+  }
+
+  .part_exp {
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .img_chs img {
+    width: 90%;
+  }
+  .head_chs {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .features_chs {
+    width: 90%; /* full width (not narrow) */
+    /* max-width: 300px; */
+    /* don’t stretch too much */
+    margin: 0 auto 1rem; /* center + spacing */
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .text_chs {
+    align-items: center; /* center items */
+    font-size: 0.9rem;
+  }
+  .exp {
+    display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .exp img {
+    width: 10%;
+  }
+  .part_exp {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    text-align: center; */
   }
 }

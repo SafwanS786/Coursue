@@ -83,3 +83,17 @@
   color: #d16751; /* accent color */
   opacity: 1;
 }
+
+@media (max-width: 480px) {
+  #head_para {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  #head_para {
+    font-size: 1.2rem;
+  }
+  .card {
+    padding: 15px;
+  }
+}

@@ -142,7 +142,11 @@
 
 @media (max-width: 768px) {
   .about-section {
-    text-align: center;
+    /* text-align: center; */
+  }
+  .dif {
+    margin-top: 20px;
+    /* background-color: teal; */
   }
   .numb {
     justify-content: center;
@@ -152,9 +156,11 @@
     align-items: center;
   }
 }
-/* Responsive adjustments */
-@media (min-width: 769px) {
-  .numb {
-    margin-top: 4rem; /* Larger margin for desktop */
+@media (max-width: 480px) {
+  .about-image {
+    width: 100%;
+    height: auto;
+    margin-top: -3rem;
+    /* background-color: crimson; */
   }
 }
