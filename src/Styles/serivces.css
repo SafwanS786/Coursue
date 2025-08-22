@@ -19,14 +19,17 @@
 .services_title {
   margin: 20px 0 40px;
   font-family: "Gantari", sans-serif;
+  /* background-color: bisque; */
 }
 
 .service_card {
   padding: 20px;
-  margin: 20px;
+  margin: 0;
+  /* background-color: #d16751; */
 }
 
 .item_card {
+  min-height: 320px;
   background: #fff;
   /* margin: 5%; */
   margin: 0 10px;
@@ -55,10 +58,11 @@
 
 .service_content {
   margin-top: 10%;
+  flex-grow: 1; 
 }
 
 .gen {
-  font-size: clamp(1rem, 1.2vw, 1.4rem);
+  font-size: clamp(1rem, 1.2vw, 1.5rem);
   margin: 0 0 10px;
   color: #000000;
   font-weight: 600;
@@ -74,6 +78,7 @@
   text-align: start;
   width: 238px;
   height: 72px;
+  flex-grow: 1; /* Allows paragraph to expand */
   /* line-height: 100%; */
   /* background-color: aqua; */
 }
@@ -91,6 +96,7 @@
   text-align: start;
   font-size: 1rem;
   /* width: 238px; */
+  /* margin-top: auto; */
 }
 
 .explore:hover {
@@ -124,20 +130,158 @@
   transition: 0.3s ease;
 }
 
+/* @media (min-width: 1024) {
+  .item_card {
+    background-color: yellow;
+  }
+} */
 /* Responsive */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .services_main {
     padding: 20px;
   }
-}
-@media (max-width: 480px) {
-  .logo img {
+} */
+/* @media (max-width: 480px) { */
+/* .logo img {
     width: 36px;
     max-height: 36px;
-  }
-  .item_card {
+  } */
+/* .item_card {
     width: 10%;
     height: 10%;
     background-color: aqua;
+  } */
+/* } */
+
+
+/*  */
+@media (max-width: 1440px) {
+
+  .item_card {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 0;
+    min-height: 300px; /* Slightly reduced for smaller screens */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .gen {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    min-height: 40px; /* Prevents title jumping */
+  }
+
+  .service_p {
+    font-size: 0.80rem;
+    width: 100%;
+    flex-grow: 1; /* Key fix - fills available space */
+    margin-bottom: 15px;
+    /* min-height: 60px; */
+    /* background-color: #383838; */
+  }
+  
+  .explore {
+    margin-top: auto; /* Keeps button at bottom */
+  }
+  
+  /* Ensure all slides have equal height */
+  .slick-track {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .slick-slide {
+    height: auto;
+  }
+  
+  .slick-slide > div {
+    height: 100%;
   }
 }
+
+
+
+@media (max-width: 1024px) {
+  .item_card {
+    width: 90%; /* make card take most of phone width */
+    height: auto; /* let it grow naturally */
+    margin: auto; /* center it */
+    background-color: #fff; /* remove aqua debug */
+    box-sizing: border-box;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: yellow; */
+  }
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .service_p {
+    font-size: 0.95rem;
+    width: 100%; /* avoid fixed width */
+    height: auto; /* let text wrap */
+    flex-grow: 1; /* ADD this - makes paragraph expand */
+    margin-bottom: 15px; /* ADD spacing */
+    /* background-color: #d16751; */
+  }
+    .explore {
+    margin-top: auto; /* Keeps button at bottom */
+    margin-bottom: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .item_card {
+    width: 90%; /* make card take most of phone width */
+    height: auto; /* let it grow naturally */
+    margin: auto; /* center it */
+    background-color: #fff; /* remove aqua debug */
+    box-sizing: content-box;
+    background-color: red;
+  }
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .service_p {
+    font-size: 0.85rem;
+    width: 100%; /* avoid fixed width */
+    height: auto; /* let text wrap */
+    background-color: #d16751;
+  }
+}
+
+@media (max-width: 480px) {
+  .item_card {
+    width: 90%; /* make card take most of phone width */
+    height: auto; /* let it grow naturally */
+    margin: auto; /* center it */
+    background-color: #fff; /* remove aqua debug */
+    box-sizing: content-box;
+    background-color: aquamarine;
+  }
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+
+  .service_p {
+    font-size: 0.85rem;
+    width: 100%; /* avoid fixed width */
+    height: auto; /* let text wrap */
+    background-color: #d16751;
+  }
+}
+
+
+/* 

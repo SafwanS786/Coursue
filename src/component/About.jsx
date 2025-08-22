@@ -6,9 +6,6 @@ import "../styles/about.css";
 export default function About() {
   const [project, setProject] = useState(0);
 
-  const ProjectHandle = (e) => {
-    setProject(e.target.value);
-  };
   useEffect(() => {
     let start = 0;
     const end = 678;
@@ -25,9 +22,6 @@ export default function About() {
   }, []);
   const [Exp, setExp] = useState(0);
 
-  const YearsHandle = (e) => {
-    setExp(e.target.value);
-  };
   useEffect(() => {
     let start_y = 0;
     const end_y = 10;
@@ -45,9 +39,6 @@ export default function About() {
   }, []);
 
   const [client, setClient] = useState(0);
-  const handleClient = (e) => {
-    setClient(e.target.value);
-  };
 
   useEffect(() => {
     let start_c = 0;
@@ -100,15 +91,15 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <div>
-              <h1 onClick={ProjectHandle}>{project}+</h1>
+              <h1>{project}+</h1>
               <p id="cp">Complete Projects</p>
             </div>
             <div>
-              <h1 onClick={YearsHandle}>{Exp}+</h1>
+              <h1>{Exp}+</h1>
               <p id="cp">Years of Experience</p>
             </div>
             <div>
-              <h1 onClick={handleClient}>{client}%</h1>
+              <h1>{client}%</h1>
               <p id="cp">Client Satisfaction Rate</p>
             </div>
           </motion.div>

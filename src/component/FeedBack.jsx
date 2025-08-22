@@ -78,21 +78,34 @@ export default function Feedback() {
     slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
+    adaptiveHeight: true, // ✅ auto height adjustment
     autoplaySpeed: 3000,
     responsive: [
       // { breakpoint: 1024, settings: { slidesToShow: 2 } },
       // { breakpoint: 768, settings: { slidesToShow: 1 } },
+      // {
+      //   breakpoint: 1200, // Below 1200px
+      //   settings: { slidesToShow: 3, slidesToScroll: 2 },
+      // },
+      // {
+      //   breakpoint: 992, // Below 992px
+      //   settings: { slidesToShow: 2, slidesToScroll: 1 },
+      // },
+      // {
+      //   breakpoint: 768, // Below 768px
+      //   settings: { slidesToShow: 1, slidesToScroll: 1 },
+      // },
       {
-        breakpoint: 1200, // Below 1200px
-        settings: { slidesToShow: 3, slidesToScroll: 2 },
+        breakpoint: 768, // <= 768px
+        settings: { slidesToShow: 1, slidesToScroll: 1 },
       },
       {
-        breakpoint: 992, // Below 992px
+        breakpoint: 992, // <= 992px
         settings: { slidesToShow: 2, slidesToScroll: 1 },
       },
       {
-        breakpoint: 768, // Below 768px
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
+        breakpoint: 1200, // <= 1200px
+        settings: { slidesToShow: 3, slidesToScroll: 2 },
       },
     ],
   };

@@ -65,15 +65,18 @@ export default function Services() {
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 3000,
+    // arrows: true,
     responsive: [
       { breakpoint: 1200, settings: { slidesToShow: 4 } },
       { breakpoint: 991, settings: { slidesToShow: 3 } },
       { breakpoint: 768, settings: { slidesToShow: 2 } },
       { breakpoint: 576, settings: { slidesToShow: 1 } },
+      { breakpoint: 480, settings: { slidesToShow: 1 } },
     ],
   };
 
   return (
+    // 1. Main Container
     <div className="container services_main">
       <motion.p
         className="our_s"
@@ -93,6 +96,7 @@ export default function Services() {
       </motion.h1>
       <Slider {...settings}>
         {servicesData.map((service, index) => (
+          // main Div 
           <motion.div
             className="service_card"
             key={index}

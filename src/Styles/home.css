@@ -59,7 +59,7 @@
 @media (max-width: 768px) {
   .home_content {
     margin-left: 0;
-    /* background-color: aqua; */
+    /* background-color: crimson; */
   }
   .home-section {
     padding: 0 1rem;
@@ -85,7 +85,7 @@
   .home-section {
     background-size: cover;
     background-position: top; /* show important part on mobile */
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 100%;
     /* height: auto; */
   }
