@@ -40,7 +40,8 @@
   /* width: 350px;
   height: 350px; */
   width: 100%;
-  max-width: 300px; /* instead of fixed 350px */
+  max-width: unset;
+  /* instead of fixed 350px */
   height: auto; /* let content decide */
   min-height: 320px;
   display: flex;
@@ -58,7 +59,7 @@
 
 .service_content {
   margin-top: 10%;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .gen {
@@ -153,10 +154,8 @@
   } */
 /* } */
 
-
-/*  */
+/*----------------------------------------------------------------------------------1440 */
 @media (max-width: 1440px) {
-
   .item_card {
     width: 100%;
     padding: 1.2rem;
@@ -164,13 +163,14 @@
     min-height: 300px; /* Slightly reduced for smaller screens */
     display: flex;
     flex-direction: column;
+    /* background-color: aqua; */
   }
-  
+
   .logo img {
     width: 50px;
     height: auto;
   }
-  
+
   .gen {
     font-size: 1rem;
     margin-bottom: 10px;
@@ -178,46 +178,55 @@
   }
 
   .service_p {
-    font-size: 0.80rem;
+    font-size: 0.8rem;
     width: 100%;
     flex-grow: 1; /* Key fix - fills available space */
     margin-bottom: 15px;
     /* min-height: 60px; */
     /* background-color: #383838; */
   }
-  
+
   .explore {
     margin-top: auto; /* Keeps button at bottom */
   }
-  
+
   /* Ensure all slides have equal height */
   .slick-track {
-    display: flex;
+    display: flex !important;
     align-items: stretch;
   }
-  
+
   .slick-slide {
     height: auto;
   }
-  
+
   .slick-slide > div {
     height: 100%;
   }
 }
 
-
-
+/*-------------------------------------------------------------------------------------------1024-------------------------------------------*/
 @media (max-width: 1024px) {
+  .service_card {
+    padding: 0.5rem;
+    width: 100%;
+    /* background-color: aqua; */
+  }
   .item_card {
     width: 90%; /* make card take most of phone width */
     height: auto; /* let it grow naturally */
-    margin: auto; /* center it */
+    margin: 0 auto; /* center it */
     background-color: #fff; /* remove aqua debug */
     box-sizing: border-box;
     min-height: 250px;
     display: flex;
     flex-direction: column;
-    /* background-color: yellow; */
+    /* background-color: pink; */
+    padding: 1.2rem;
+  }
+
+  .slick-slide {
+    padding: 0 10px; /* Space between slides */
   }
   .logo img {
     width: 50px;
@@ -232,13 +241,13 @@
     margin-bottom: 15px; /* ADD spacing */
     /* background-color: #d16751; */
   }
-    .explore {
+  .explore {
     margin-top: auto; /* Keeps button at bottom */
     margin-bottom: 0;
   }
 }
 
-
+/*---------------------------------------------------------------------------------------------------------------------768 */
 @media (max-width: 768px) {
   .item_card {
     width: 90%; /* make card take most of phone width */
@@ -246,7 +255,7 @@
     margin: auto; /* center it */
     background-color: #fff; /* remove aqua debug */
     box-sizing: content-box;
-    background-color: red;
+    /* background-color: red; */
   }
   .logo img {
     width: 50px;
@@ -257,10 +266,10 @@
     font-size: 0.85rem;
     width: 100%; /* avoid fixed width */
     height: auto; /* let text wrap */
-    background-color: #d16751;
+    /* background-color: #d16751; */
   }
 }
-
+/* ------------------------------------------------------------------------------------------------------480px */
 @media (max-width: 480px) {
   .item_card {
     width: 90%; /* make card take most of phone width */
@@ -268,7 +277,7 @@
     margin: auto; /* center it */
     background-color: #fff; /* remove aqua debug */
     box-sizing: content-box;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
   .logo img {
     width: 50px;
@@ -279,9 +288,6 @@
     font-size: 0.85rem;
     width: 100%; /* avoid fixed width */
     height: auto; /* let text wrap */
-    background-color: #d16751;
+    /* background-color: aqua; */
   }
 }
-
-
-/* 

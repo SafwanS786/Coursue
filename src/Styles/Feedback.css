@@ -6,6 +6,10 @@
   /* background-color: aqua; */
   /* margin-bottom: 10%; */
 }
+.feedback-section {
+  padding: 50px;
+  text-align: center;
+}
 #feed_para {
   /* background-color: aqua; */
   width: fit-content;
@@ -36,19 +40,19 @@
   /* padding: 20px; */
 }
 .card {
+  /* min-width: 90%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* height: 100%; */
   height: auto;
-
+  flex: 1;
   border: 2px solid #999999;
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   /* width: 500px; */
-  /* background-color: aqua; */
-  min-height: 220px;
+  min-height: 260px;
   text-align: left;
 }
 .card img {
@@ -70,6 +74,7 @@
   font-size: 14px;
 }
 .slick-slide {
+  display: flex;
   padding: 0 10px; /* space between cards (left + right) */
   height: auto !important;
   padding: 0 10px;
@@ -78,7 +83,7 @@
 
 .slick-track {
   display: flex !important; /* keeps cards aligned evenly */
-  align-items: stretch;
+  align-items: stretch !important;
 }
 .slick-dots {
   bottom: -35px; /* push below cards */
@@ -93,10 +98,52 @@
   color: #d16751; /* accent color */
   opacity: 1;
 }
+.feedback-text {
+  font-size: 14px;
+  margin: 15px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* only 4 lines shown */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
+  .card {
+    background-color: azure;
+    min-height: auto;
+
+    /* height: auto; */
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    padding: 1.2rem;
+    background-color: red;
+    min-height: auto;
+  }
   #head_para {
     font-size: 1.2rem;
+    color: yellow;
+  }
+  .in_line {
+    display: flex;
+    gap: 1px;
+    background-color: #ffd700;
+  }
+}
+
+@media (max-width: 645px) and (min-width: 576px) {
+  .card {
+    padding: 1rem;
+    min-height: auto;
+    background-color: gold;
+  }
+  .feedback-cards {
+    margin-top: 10px;
+    background-color: #ffd700;
+  }
+  .slick-slide {
+    padding: 0 5px;
   }
 }
 @media (max-width: 480px) {
@@ -104,6 +151,9 @@
     font-size: 1.2rem;
   }
   .card {
-    padding: 15px;
+    padding: 1rem;
+    background-color: aqua;
+    /* color: #ffd700; */
+    min-height: auto;
   }
 }

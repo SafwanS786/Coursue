@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Feedback.css";
 import { motion } from "framer-motion";
 import Ellipse from "../img/Ellipse.png";
@@ -71,44 +71,76 @@ const FeedContent = [
   },
 ];
 export default function Feedback() {
-  const Feedsettings = {
+  const [slider, setSlider] = useState(false);
+  const [Feedsetting, setFeedSetting] = useState({
     dots: true,
     infinite: true,
     speed: 200,
     slidesToShow: 4,
     slidesToScroll: 2,
     autoplay: true,
-    adaptiveHeight: true, // ✅ auto height adjustment
+    adaptiveHeight: false, // ✅ auto height adjustment
     autoplaySpeed: 3000,
-    responsive: [
-      // { breakpoint: 1024, settings: { slidesToShow: 2 } },
-      // { breakpoint: 768, settings: { slidesToShow: 1 } },
-      // {
-      //   breakpoint: 1200, // Below 1200px
-      //   settings: { slidesToShow: 3, slidesToScroll: 2 },
-      // },
-      // {
-      //   breakpoint: 992, // Below 992px
-      //   settings: { slidesToShow: 2, slidesToScroll: 1 },
-      // },
-      // {
-      //   breakpoint: 768, // Below 768px
-      //   settings: { slidesToShow: 1, slidesToScroll: 1 },
-      // },
-      {
-        breakpoint: 768, // <= 768px
-        settings: { slidesToShow: 1, slidesToScroll: 1 },
-      },
-      {
-        breakpoint: 992, // <= 992px
-        settings: { slidesToShow: 2, slidesToScroll: 1 },
-      },
-      {
-        breakpoint: 1200, // <= 1200px
-        settings: { slidesToShow: 3, slidesToScroll: 2 },
-      },
-    ],
-  };
+  });
+
+  useEffect(() => {
+    setSlider(true);
+    const handleResize = () => {
+      if (window.innerWidth < 576) {
+        setFeedSetting((prevSettings) => ({
+          ...prevSettings,
+          slidesToShow: 1,
+        }));
+      } else if (window.innerWidth < 768) {
+        setFeedSetting((prevSettings) => ({
+          ...prevSettings,
+          slidesToShow: 2,
+        }));
+      } else if (window.innerWidth < 1024) {
+        setFeedSetting((prevSettings) => ({
+          ...prevSettings,
+          slidesToShow: 3,
+        }));
+      } else {
+        setFeedSetting((prevSettings) => ({
+          ...prevSettings,
+          slidesToShow: 4,
+        }));
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  // responsive: [
+  // { breakpoint: 1024, settings: { slidesToShow: 2 } },
+  // { breakpoint: 768, settings: { slidesToShow: 1 } },
+  // {
+  //   breakpoint: 1200, // Below 1200px
+  //   settings: { slidesToShow: 3, slidesToScroll: 2 },
+  // },
+  // {
+  //   breakpoint: 992, // Below 992px
+  //   settings: { slidesToShow: 2, slidesToScroll: 1 },
+  // },
+  // {
+  //   breakpoint: 768, // Below 768px
+  //   settings: { slidesToShow: 1, slidesToScroll: 1 },
+  // },
+  //   {
+  //     breakpoint: 768, // <= 768px
+  //     settings: { slidesToShow: 1, slidesToScroll: 1 },
+  //   },
+  //   {
+  //     breakpoint: 992, // <= 992px
+  //     settings: { slidesToShow: 2, slidesToScroll: 1 },
+  //   },
+  //   {
+  //     breakpoint: 1200, // <= 1200px
+  //     settings: { slidesToShow: 3, slidesToScroll: 2 },
+  //   },
+  // ],
+
   return (
     <div className="container Feed_main bg-light">
       <motion.p
@@ -129,20 +161,23 @@ export default function Feedback() {
         Client Feedback and Success Stories
       </motion.h1>
       <div className="feedback-cards">
-        <Slider {...Feedsettings}>
-          {FeedContent.map((Feed, index) => (
-            <div className="card" key={index}>
-              <div className="in_line">
-                <img src={Feed.icon} alt={Feed.alt} />
-                <p>
-                  <strong>{Feed.Name}</strong> -{Feed.work}
-                </p>
+        {slider && (
+          <Slider {...Feedsetting}>
+            {FeedContent.map((Feed, index) => (
+              <div className="card" key={index}>
+                <div className="in_line">
+                  <img src={Feed.icon} alt={Feed.alt} />
+                  <p>
+                    <strong>{Feed.Name}</strong> -{Feed.work}
+                  </p>
+                </div>
+                <p className="feedback-text">{Feed.para}</p>
+
+                <div className="rating">{Feed.Rate}</div>
               </div>
-              <p>{Feed.para}</p>
-              <div className="rating">{Feed.Rate}</div>
-            </div>
-          ))}
-        </Slider>
+            ))}
+          </Slider>
+        )}
       </div>
     </div>
   );
