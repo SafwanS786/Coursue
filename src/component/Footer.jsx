@@ -84,7 +84,9 @@ export default function Footer() {
         </ul>
       </div>
       <div className="Footer_column">
-        <p className="footer-heading">Contact Us</p>
+        <p id="footer_heading">Contact Us</p>
+        {/* <p className="footer-heading">Contact Us</p> */}
+
         <ul className="footer-contact">
           <li>
             <FaMapMarkerAlt /> <p>123 Health Ave, Wellness City, ST 00000</p>

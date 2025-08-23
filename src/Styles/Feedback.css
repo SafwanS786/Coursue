@@ -109,7 +109,7 @@
 
 @media (max-width: 1024px) {
   .card {
-    background-color: azure;
+    /* background-color: azure; */
     min-height: auto;
 
     /* height: auto; */
@@ -118,17 +118,17 @@
 @media (max-width: 768px) {
   .card {
     padding: 1.2rem;
-    background-color: red;
+    /* background-color: red; */
     min-height: auto;
   }
   #head_para {
     font-size: 1.2rem;
-    color: yellow;
+    /* color: yellow; */
   }
   .in_line {
     display: flex;
     gap: 1px;
-    background-color: #ffd700;
+    /* background-color: #ffd700; */
   }
 }
 
@@ -152,7 +152,7 @@
   }
   .card {
     padding: 1rem;
-    background-color: aqua;
+    /* background-color: aqua; */
     /* color: #ffd700; */
     min-height: auto;
   }
