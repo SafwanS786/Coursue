@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import aboutImg from "../img/c_image.jpg";
+import aboutImg from "../Home_component/img/c_image.jpg";
 import { motion } from "framer-motion";
-import "../styles/about.css";
+import "../../Styles/Home_Style/about.css";
 
 export default function About() {
   const [project, setProject] = useState(0);

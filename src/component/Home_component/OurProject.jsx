@@ -1,9 +1,9 @@
 import React from "react";
-import "../Styles/OurProject.css";
+import "../../Styles/Home_Style/OurProject.css";
 import { motion } from "framer-motion";
-import ser from "../img/ser_b.png";
-import villa from "../img/residential-modern-villa.png";
-import work from "../img/work.png";
+import ser from "../Home_component/img/ser_b.png";
+import villa from "../Home_component/img/residential-modern-villa.png";
+import work from "../Home_component/img/work.png";
 export default function OurProject() {
   const Projects = [
     {

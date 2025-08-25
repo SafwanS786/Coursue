@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styles/footer.css";
-import f_logo from "../img/Footer_logo.png";
+import "../Styles/Home_Style/footer.css";
+import f_logo from "../component/Home_component/img/Footer_logo.png";
 import {
   FaInstagram,
   FaFacebookF,

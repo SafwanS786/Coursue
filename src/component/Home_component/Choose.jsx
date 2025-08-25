@@ -1,11 +1,11 @@
 import React from "react";
-import "../Styles/choose.css";
+import "../../Styles/Home_Style/choose.css";
 import { motion } from "framer-motion";
-import choseImg from "../img/chose.png";
-import expImg from "../img/Exp.png";
-import timeImg from "../img/TIme.png";
-import clientImg from "../img/client.png";
-import endImg from "../img/End.png";
+import choseImg from "../Home_component/img/chose.png";
+import expImg from "../Home_component/img/Exp.png";
+import timeImg from "../Home_component/img/TIme.png";
+import clientImg from "../Home_component/img/client.png";
+import endImg from "../Home_component/img/End.png";
 
 const features = [
   {

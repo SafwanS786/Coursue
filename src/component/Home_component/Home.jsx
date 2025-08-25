@@ -1,7 +1,7 @@
 import React from "react";
-import "../styles/home.css";
+import "../../Styles/Home_Style/home.css";
 import { motion } from "framer-motion";
-import img_main from "../img/image.jpg";
+import img_main from "./img/image.jpg";
 
 export default function Home() {
   return (

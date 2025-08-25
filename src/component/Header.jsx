@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Header_logo from "../img/c_logo.jpg";
-import "../styles/header.css";
+import Header_logo from "../component/Home_component/img/c_logo.jpg";
+import "../Styles/Home_Style/header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [MenuOpen, setMenuOpen] = useState(false);
@@ -54,24 +55,24 @@ export default function Header() {
           >
             <ul>
               <li>
-                <a href="/home" className="active">
+                <Link to="/" className="active">
                   HOME
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about_us">ABOUT US</a>
+                <Link to="/about">ABOUT US</Link>
               </li>
               <li>
-                <a href="/projects">PROJECTS</a>
+                <Link to="/projects">PROJECTS</Link>
               </li>
               <li>
-                <a href="/portfolio">PORTFOLIO</a>
+                <Link to="/portfolio">PORTFOLIO</Link>
               </li>
               <li>
-                <a href="/blog">BLOG</a>
+                <Link to="/blog">BLOG</Link>
               </li>
               <li>
-                <a href="/contact_us">CONTACT US</a>
+                <Link to="/contact_us">CONTACT US</Link>
               </li>
             </ul>
           </motion.div>

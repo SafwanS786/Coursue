@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/getIn.css";
+import "../../Styles/Home_Style/getIn.css";
 import { motion } from "framer-motion";
 export default function GetInTouch() {
   return (

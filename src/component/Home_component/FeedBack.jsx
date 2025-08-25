@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "../Styles/Feedback.css";
+import "../../Styles/Home_Style/Feedback.css";
 import { motion } from "framer-motion";
-import Ellipse from "../img/Ellipse.png";
-import Ellipse1 from "../img/Ellipse1.png";
+import Ellipse from "../Home_component/img/Ellipse.png";
+import Ellipse1 from "../Home_component/img/Ellipse1.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

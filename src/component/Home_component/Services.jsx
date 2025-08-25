@@ -3,11 +3,11 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../Styles/serivces.css";
-import frameImg from "../img/Frame.png";
-import frame1Img from "../img/Frame1.png";
-import frame2Img from "../img/Frame (2).png";
-import frame3Img from "../img/Frame (3).png";
+import "../../Styles/Home_Style/serivces.css";
+import frameImg from "../Home_component/img/Frame.png";
+import frame1Img from "../Home_component/img/Frame1.png";
+import frame2Img from "../Home_component/img/Frame (2).png";
+import frame3Img from "../Home_component/img/Frame (3).png";
 
 const servicesData = [
   {

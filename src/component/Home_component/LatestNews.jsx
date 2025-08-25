@@ -1,9 +1,9 @@
 import React from "react";
-import "../Styles/News.css";
+import "../../Styles/Home_Style/News.css";
 import { motion } from "framer-motion";
-import transform from "../img/Transformative.png";
-import model from "../img/Modern.png";
-import Top from "../img/Top.png";
+import transform from "../Home_component/img/Transformative.png";
+import model from "../Home_component/img/Modern.png";
+import Top from "../Home_component/img/Top.png";
 export default function LatestNews() {
   return (
     <div className="container latest-news">

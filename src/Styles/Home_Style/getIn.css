@@ -1,6 +1,7 @@
 .Get_main_class {
   position: relative;
-  background-image: url("../img/touch.jpg");
+  /* ../img/touch.jpg */
+  background-image: url("../../component/Home_component/img/touch.jpg");
   width: 100%;
   height: 400px;
   background-size: cover;
