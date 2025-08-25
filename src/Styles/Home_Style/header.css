@@ -13,7 +13,7 @@ body {
 .container {
   width: 100%;
   padding: 0 4rem;
-  background-color: crimson;
+  /* background-color: crimson; */
   box-sizing: border-box;
 }
 

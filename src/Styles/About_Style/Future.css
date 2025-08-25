@@ -1,0 +1,42 @@
+.Abt_Future {
+  display: flex;
+  align-items: flex-start; /* vertically center image & text */
+  /* justify-content: space-between; space balanced */
+  gap: 2rem; /* small gap like Figma */
+  margin: 5rem 0;
+}
+
+.abt_img_class {
+  flex: 0 0 40%; /* fixed 50% width, no flex-grow */
+}
+
+.abt_img_class img {
+  width: 100%; /* image fills its half */
+  height: auto;
+  display: block; /* remove bottom spacing */
+  border-radius: 10px;
+}
+
+.text_content {
+  flex: 0 0 50%; /* fixed 50% width */
+  /* background: aqua; just for testing */
+  padding: 3rem 5rem;
+}
+.abt_heading {
+  font-size: 1rem;
+  padding: 0.3em 0.5em;
+  display: inline-block;
+  border-radius: 30px;
+  border: 1px solid bla ck;
+}
+.bld {
+  width: 50%;
+  font-weight: 600;
+  font-size: 35px;
+}
+.para_ftr {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1rem;
+  width: 80%;
+}

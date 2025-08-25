@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Header_logo from "../component/Home_component/img/c_logo.jpg";
 import "../Styles/Home_Style/header.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   const [MenuOpen, setMenuOpen] = useState(false);
@@ -55,24 +56,52 @@ export default function Header() {
           >
             <ul>
               <li>
-                <Link to="/" className="active">
+                <NavLink
+                  to="/home"
+                  className={({ isActive }) => (isActive ? "active" : "fsfsf")}
+                >
                   HOME
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link to="/about">ABOUT US</Link>
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  ABOUT US
+                </NavLink>
               </li>
               <li>
-                <Link to="/projects">PROJECTS</Link>
+                <NavLink
+                  to="/projects"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  PROJECTS
+                </NavLink>
               </li>
               <li>
-                <Link to="/portfolio">PORTFOLIO</Link>
+                <NavLink
+                  to="/portfolio"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  PORTFOLIO
+                </NavLink>
               </li>
               <li>
-                <Link to="/blog">BLOG</Link>
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  BLOG
+                </NavLink>
               </li>
               <li>
-                <Link to="/contact_us">CONTACT US</Link>
+                <NavLink
+                  to="/contact_us"
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  CONTACT US
+                </NavLink>
               </li>
             </ul>
           </motion.div>
