@@ -8,6 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import Acc from "../component/Home_component/Footer_Acc";
 export default function Footer() {
   return (
     <div className="Main_Footer_class">
@@ -50,8 +51,7 @@ export default function Footer() {
         </div>
       </div>
       {/* </div> */}
-      <div className="Footer_column">
-        <p id="footer_heading">Quick Link</p>
+      <Acc title="Quick Link">
         <nav className="Footer_nav">
           <ul>
             <li>
@@ -65,15 +65,14 @@ export default function Footer() {
             <li>
               <a href="/projects">Projects</a>
             </li>
-
             <li>
               <a href="/blog">Blog</a>
             </li>
           </ul>
         </nav>
-      </div>
-      <div className="Footer_column">
-        <p id="footer_heading">Quick Services</p>
+      </Acc>
+
+      <Acc title="Quick Services">
         <ul>
           <li>General Construction</li>
           <li>Architectural Design</li>
@@ -82,11 +81,9 @@ export default function Footer() {
           <li>Commercial Projects</li>
           <li>Residential Buildings</li>
         </ul>
-      </div>
-      <div className="Footer_column">
-        <p id="footer_heading">Contact Us</p>
-        {/* <p className="footer-heading">Contact Us</p> */}
+      </Acc>
 
+      <Acc title="Contact Us">
         <ul className="footer-contact">
           <li>
             <FaMapMarkerAlt /> <p>123 Health Ave, Wellness City, ST 00000</p>
@@ -99,7 +96,7 @@ export default function Footer() {
             <p> info@generalhospital.com</p>
           </li>
         </ul>
-      </div>
+      </Acc>
     </div>
   );
 }
