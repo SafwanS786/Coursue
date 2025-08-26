@@ -3,9 +3,10 @@
 }
 .Main_About_us {
   width: 100%;
-  min-height: 550px;
+  min-height: 500px;
   height: auto;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   position: relative;
   display: flex;
@@ -13,8 +14,10 @@
   justify-content: flex-end;
   align-items: flex-start;
   color: #ffffff;
+  /* background-size: contain; */
 }
 .ovr {
+  position: relative;
   padding: 3.5rem;
 }
 .title {
@@ -27,4 +30,31 @@
   font-size: 18px;
   color: #ddd;
   font-family: "Poppins";
+}
+
+@media (max-width: 1024px) {
+  .Main_About_us {
+    min-height: 500px;
+    /* background-size: contain; */
+  }
+  .title {
+    font-size: 2.2rem;
+    background-color: aqua;
+  }
+  .breadcrumb {
+    font-size: 16px;
+  }
+  .ovr {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .Main_About_us {
+    min-height: 300px;
+    background-position: top;
+  }
+  .title {
+    font-size: 1.2rem;
+    background-color: blueviolet;
+  }
 }
