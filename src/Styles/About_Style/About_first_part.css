@@ -7,6 +7,7 @@
   height: auto;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -21,10 +22,108 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
+  line-height: 1.2;
 }
 
 .breadcrumb {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ddd;
   font-family: "Poppins";
+}
+@media (max-width: 1400px) {
+  .Main_About_us {
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+  }
+  .ovr {
+    padding: 2.1rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .breadcrumb {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 1200px) {
+  .Main_About_us {
+    min-height: 500px;
+    background-size: cover;
+    background-position: left center;
+  }
+  .ovr {
+    padding: 2.5rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .breadcrumb {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 992px) {
+  .Main_About_us {
+    min-height: 400px;
+    background-size: cover;
+    background-position: left center;
+  }
+  .ovr {
+    padding: 1.8rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .breadcrumb {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .Main_About_us {
+    min-height: 400px;
+    background-size: cover;
+    background-position: left center;
+  }
+  .ovr {
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .breadcrumb {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .Main_About_us {
+    min-height: 400px;
+    background-size: cover;
+    background-position: left center;
+  }
+  .ovr {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .breadcrumb {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 480px) {
+  .Main_About_us {
+    min-height: 300px;
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  .ovr {
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .breadcrumb {
+    font-size: 1rem;
+  }
 }
