@@ -43,7 +43,6 @@
   max-width: unset;
   /* instead of fixed 350px */
   height: auto; /* let content decide */
-  min-height: 320px;
   display: flex;
   flex-direction: column;
   gap: 10px;

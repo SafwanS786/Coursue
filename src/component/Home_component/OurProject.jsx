@@ -57,7 +57,7 @@ export default function OurProject() {
                 <div className="overlay">
                   <p>{project.para}</p>
                   <h3>
-                    {project.Proj_head}{" "}
+                    {project.Proj_head}
                     <span className="arr">{project.Arrow}</span>
                   </h3>
                 </div>

@@ -1,0 +1,67 @@
+.Status_Main {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#cmp_lbl {
+  border-radius: 30px;
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid #000;
+}
+#cmp_head {
+  /* background-color: aqua; */
+  font-weight: 600;
+  /* margin: 0; */
+}
+.counter_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.counter_div > div h1 {
+  /* background-color: aqua; */
+  font-size: 3.5rem;
+  font-size: 50px;
+  font-weight: 700;
+  font-weight: bold;
+  color: #000000;
+  margin: 0;
+}
+.counter_div > div p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* margin: 0; */
+}
+@media (max-width: 768px) {
+  .counter_div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .counter_div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .counter_div {
+    display: flex;
+    flex-direction: column;
+  }
+  .counter_div > div h1 {
+    /* background-color: aqua; */
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .counter_div > div p {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

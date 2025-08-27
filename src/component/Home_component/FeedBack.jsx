@@ -12,7 +12,7 @@ const FeedContent = [
     alt: "David Anthony",
     Name: "David Anthony",
     work: "Client",
-    para: `BuildGo delivered exceptional service. They met every deadline, and the
+    para: `BuildGo delivered exceptional Feed_main.bg-lightservice. They met every deadline, and the
         quality of their work exceeded our expectations.`,
     Rate: "★★★★★",
   },
