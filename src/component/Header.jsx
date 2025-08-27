@@ -58,7 +58,7 @@ export default function Header() {
               <li>
                 <NavLink
                   to="/home"
-                  className={({ isActive }) => (isActive ? "active" : "fsfsf")}
+                  className={({ isActive }) => (isActive ? "active" : "")}
                 >
                   HOME
                 </NavLink>
