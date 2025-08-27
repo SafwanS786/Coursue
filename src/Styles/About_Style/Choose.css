@@ -144,11 +144,11 @@
     font-size: 1rem;
   }
   .point-card {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
   .point-card p {
     /* font-size: 1rem; */
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .down_Part {
     /* background-color: #d94e38; */

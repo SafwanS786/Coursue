@@ -1,0 +1,19 @@
+.P_Main {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  margin-top: 5rem;
+}
+.P_Main P {
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+.P_Main h1 {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
