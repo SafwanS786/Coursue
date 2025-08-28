@@ -48,6 +48,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
+  background-color: aqua;
   bottom: 20px;
   left: 20px;
   background-color: #00000080;

@@ -22,6 +22,7 @@ body {
   background-color: #fff;
   border-bottom: 1px solid #eee;
   position: relative;
+  /* position: fixed; */
 }
 
 .Header_logo_class img {

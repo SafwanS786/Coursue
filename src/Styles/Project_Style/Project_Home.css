@@ -1,0 +1,117 @@
+.project-bg-img {
+  width: 100%;
+  position: relative;
+  background-image: url("../../component//Project_component/img/Home.png");
+  background-size: cover;
+  min-height: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: flex-start;
+}
+.project-bg-img {
+  padding: 4rem;
+}
+.Project_Main_Class_Down {
+  margin-bottom: 5rem;
+}
+#project_heading {
+  font-weight: 600;
+  font-size: 2.1rem;
+  position: relative;
+  color: #fff;
+}
+#project_para {
+  position: relative;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* 5 button che aama  */
+/* .Project_Main_Class_Down */
+.option_btn {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
+  /* text-align: center; */
+}
+#cnt {
+  border-radius: 30px;
+  border: 1px solid #f3f5fa;
+  background-color: #f3f5fa;
+  color: #999999;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  /* background-color: crimson; */
+}
+#cnt:hover {
+  /* background-color: aqua; */
+  border: 1px solid #000;
+  cursor: pointer;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+.image_grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* width: 80%; */
+  /* background-color: aqua; */
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+.image_grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.image_item {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+}
+.over {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 0;
+  bottom: 50px;
+  left: 20px;
+  /* background-color: #00000080; */
+  color: #ffffff;
+  padding: 10px 10px;
+  opacity: 0;
+  /* width: 70%; */
+  height: 20%;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  font-family: "Gantari";
+  text-align: start;
+}
+.over h1 {
+  margin: 1rem;
+}
+.over p {
+  margin: 1rem;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  padding: 0.3rem 0.8rem;
+  width: 40%;
+  text-align: center;
+}
+.image_item:hover .over {
+  /* background-color: cadetblue; */
+  opacity: 1;
+  transform: translateY(0);
+}
