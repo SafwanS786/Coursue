@@ -22,7 +22,7 @@
 
 .head_chs {
   max-width: 516px;
-  height: 84px;
+  min-height: 84px;
   margin: 10px auto 40px;
   font-family: "Gantari", sans-serif;
   color: #000000;
@@ -55,9 +55,9 @@
   text-align: start;
 }
 .part_exp {
-  width: 732px;
-  display: flex;
-  gap: 20px;
+  max-width: 732px;
+  /* width: 732px; */
+  /* background-color: crimson; */
   margin: 15px;
   padding: 10px;
 }
