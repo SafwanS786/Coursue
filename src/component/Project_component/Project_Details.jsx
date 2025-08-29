@@ -5,6 +5,8 @@ import { useParams } from "react-router-dom";
 import Dlt1 from "../Project_component/img/Dlt_1.png";
 import ch1 from "../Project_component/img/ch1.png";
 import ch2 from "../Project_component/img/ch2.png";
+//2 Information of Project
+import Dlt2 from "../Project_component/img/frame2.png";
 
 export default function Project_Details() {
   const ProjectData = [
@@ -51,9 +53,48 @@ export default function Project_Details() {
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text.`,
     },
+    {
+      id: 2,
+      icon: Dlt2, // 👈 replace with Cottage Renovation image if you have one (e.g., Dlt2)
+      alt: "Cottage Renovation",
+      cltName: "Client",
+      Name: "Greenwood Family",
+      Loc: "Location",
+      Loc_Add: "Aspen, Colorado, USA",
+      Prj: "Project Year",
+      Prj_Dt: "10 March 2024",
+      Dur: "Duration",
+      Dur_P: "1 Year, 6 Months",
+      Bug: "Budget",
+      Bug_Rs: "$2.5 Million",
+      Heading: "Cottage Renovation – Blending Rustic Charm with Modern Comfort",
+      Para1: `This project transformed a decades-old countryside cottage into a 
+      cozy yet luxurious retreat. The renovation focused on preserving the 
+      rustic charm of the original structure while upgrading it with 
+      modern amenities for year-round comfort.`,
+      Para2: `Natural wood, stone textures, and warm lighting were combined 
+      with smart layouts and energy-efficient solutions. The design 
+      seamlessly blends tradition with contemporary style, 
+      creating a welcoming family getaway.`,
+      chlg: "The Challenge of Project",
+      Para3: `The biggest challenge was maintaining the authentic character 
+      of the old cottage while ensuring structural stability and 
+      modern convenience. Limited space required creative planning, 
+      while remote location logistics added complexity.`,
+      icon1: ch1, // 👈 replace with your own images if available
+      icon2: ch2,
+      alt1: "Image",
+      Para4: `Attention to detail was key. Every beam, stone, and fixture 
+      was carefully chosen to honor the cottage’s history while 
+      ensuring durability. The end result offers timeless appeal 
+      with contemporary function.`,
+      Para5: `The renovated cottage now serves as a perfect family retreat, 
+      offering warmth, comfort, and style. It demonstrates how 
+      heritage architecture can be rejuvenated for future generations.`,
+    },
   ];
   const { id } = useParams();
-  const project = ProjectData[id];
+  const project = ProjectData.find((p) => p.id === parseInt(id));
 
   if (!project) {
     return <div>Project not found</div>;
