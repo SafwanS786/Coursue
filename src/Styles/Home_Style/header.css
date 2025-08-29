@@ -21,8 +21,10 @@ body {
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #eee;
-  position: relative;
-  /* position: fixed; */
+  position: fixed;
+  top: 0; /* stick to top */
+  left: 0;
+  z-index: 100;
 }
 
 .Header_logo_class img {
