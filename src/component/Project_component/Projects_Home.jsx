@@ -7,38 +7,46 @@ import frame4 from "../Project_component/img/Frame4.png";
 import frame5 from "../Project_component/img/Frame5.png";
 import frame6 from "../Project_component/img/Frame6.png";
 import Pagination from "../Project_component/Pagination";
+import { Link } from "react-router-dom";
 
 export default function Projects_Home() {
   const grid_pht = [
     {
+      id: 1,
       icon: frame1,
       alt: "Modern Villa Renovation",
       Text: "Commercial",
     },
     {
+      id: 2,
       icon: frame2,
-      alt: "Modern Villa Renovation",
-      Text: "Commercial",
+      alt: "Cottage Renovation",
+      Text: "Renovation",
     },
     {
+      id: 3,
       icon: frame3,
-      alt: "Modern Villa Renovation",
+      alt: "Beach House",
       Text: "Commercial",
     },
     {
+      id: 4,
       icon: frame4,
-      alt: "Modern Villa Renovation",
+      alt: "Office Tower",
       Text: "Commercial",
     },
     {
       icon: frame5,
-      alt: "Modern Villa Renovation",
+      id: 5,
+      alt: "Shopping Mall",
       Text: "Commercial",
     },
     {
+      id: 6,
       icon: frame6,
-      alt: "Modern Villa Renovation",
-      Text: "Commercial",
+
+      alt: "Luxury Apartment",
+      Text: "Residential",
     },
   ];
   return (
@@ -61,15 +69,18 @@ export default function Projects_Home() {
             return (
               <div className="image_item" key={index}>
                 <img src={item.icon} alt={item.alt} />
+
                 <div className="over">
-                  <h1>{item.alt}</h1>
+                  <Link to={`/projects/${item.id}`}>
+                    <h1>{item.alt}</h1>
+                  </Link>
                   <p>{item.Text}</p>
                 </div>
               </div>
             );
           })}
         </div>
-      <Pagination />
+        <Pagination />
       </div>
     </>
   );

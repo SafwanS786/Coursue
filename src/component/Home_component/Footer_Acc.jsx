@@ -37,6 +37,7 @@ export default function Footer_Acc({ title, children }) {
           style={{
             color: "#FFF",
             backgroundColor: "aliceblue",
+
             borderRadius: "30px",
           }}
           src={arrow}

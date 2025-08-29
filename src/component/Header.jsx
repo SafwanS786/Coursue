@@ -81,10 +81,10 @@ export default function Header() {
               </li>
               <li>
                 <NavLink
-                  to="/portfolio"
+                  to="/details"
                   className={({ isActive }) => (isActive ? "active" : "")}
                 >
-                  PORTFOLIO
+                  DETAILS
                 </NavLink>
               </li>
               <li>

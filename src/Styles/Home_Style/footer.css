@@ -126,6 +126,24 @@
     margin: 10px;
   }
 }
+@media (min-width: 769px) {
+  .accordion-toggle span {
+    display: none;
+  }
+  .accordion-content {
+    display: block !important; /* keep footer expanded */
+  }
+}
+.accordion-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
+  transition: transform 0.3s ease; /* smooth rotation */
+}
+
+.accordion-icon.rotate {
+  transform: rotate(180deg); /* flip arrow */
+}
 
 @media (max-width: 768px) {
   .Main_Footer_class {
@@ -169,6 +187,7 @@
 @media (max-width: 480px) {
   .Main_Footer_class {
     padding: 20px 5%;
+    gap: 0;
     /* background-color: #ff6600; */
   }
   .Footer_Logo img {
@@ -196,7 +215,7 @@
   background: none;
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   padding: 10px 0;
   cursor: pointer;
@@ -226,21 +245,3 @@
 }
 
 /* Only show accordion style on small screens */
-@media (min-width: 769px) {
-  .accordion-toggle span {
-    display: none;
-  }
-  .accordion-content {
-    display: block !important; /* keep footer expanded */
-  }
-}
-.accordion-icon {
-  width: 18px;
-  height: 18px;
-  margin-left: 8px;
-  transition: transform 0.3s ease; /* smooth rotation */
-}
-
-.accordion-icon.rotate {
-  transform: rotate(180deg); /* flip arrow */
-}
