@@ -14,6 +14,8 @@ function App() {
           theme === "light" ? "bg-[#F9FAFB]" : "bg-[#123456]"
         }`}
       >
+        {console.log("App.jsx is there", theme)}
+        {console.log("what is this", useTheme())}
         <div className="h-full sticky top-0 bottom-0 overflow-hidden">
           <Sidebar />
         </div>
@@ -39,5 +41,5 @@ function App() {
     </>
   );
 }
-
 export default App;
+

@@ -90,15 +90,15 @@ export default function Navbar() {
 
         <div className="h-8 w-1 font-bold bg-[#f2f2f2]"></div>
         {/* <div className="flex items-center gap-2 cursor-pointer hover:bg-gray-100 p-2 rounded-xl transition-all"> */}
-        <div className="flex items-center gap-2 md:gap-3 cursor-pointer hover:bg-gray-100 p-2 md:p-3 lg:p-4 rounded-xl transition-all">
+        <div className="flex items-center gap-2 md:gap-3 cursor-pointer p-2 rounded-xl transition-all">
           <img
             src={Ellipse}
             alt="Profile"
-            className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10 rounded-full object-cover"
+            className="w-5 h-5 md:w-6 md:h-6 lg:w-8 lg:h-8 rounded-full object-cover"
           />
           {/* <div className="border border-[#f2f2f2] w-12 "></div> */}
           <span
-            className="text-xs sm:text-sm md:text-base flex items-center font-medium text-gray-700
+            className="text-xs sm:text-sm flex items-center font-medium text-gray-700
           "
           >
             {/* hidden lg:block text-sm lg:text-base xl:text-lg font-medium text-gray-700 */}

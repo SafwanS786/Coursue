@@ -82,7 +82,7 @@ export default function Sidebar() {
       <div
         className={`
           fixed inset-y-0 left-0 z-40
-          w-full mt-15 lg:w-60 lg:mt-0 lg:rounded-2xl bg-white shadow-lg border border-[#f2f2f2] 
+          w-60 mt-15 lg:w-60 lg:mt-0 lg:rounded-2xl bg-white shadow-lg border border-[#f2f2f2] 
           p-4 flex flex-col justify-between overflow-hidden
           transition-transform duration-300 ease-in-out h-screen cursor-pointer
           ${isopen ? "translate-x-0" : "-translate-x-full"}
@@ -177,7 +177,7 @@ export default function Sidebar() {
         <>
           {console.log("this is Render when Black  True coming", isopen)}
           <div
-            className="fixed inset-0 bg-black/5 bg-opacity-50 z-30 lg:hidden cursor-pointer"
+            className="fixed inset-0 bg-black/50 bg-opacity-50 z-30 lg:hidden cursor-pointer"
             onClick={closeSidebar}
           />
           {/* {console.log("this is Render when Black  False coming", isopen)} */}

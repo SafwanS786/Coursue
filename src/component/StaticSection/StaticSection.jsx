@@ -4,12 +4,14 @@ import { Plus } from "lucide-react";
 import mentor1 from "../../assets/img/Ellipse.png";
 import mentor2 from "../../assets/img/Ellipse1.png";
 import mentor3 from "../../assets/img/Ellipse.png";
+import { useTheme } from "../../Context/ThemeContext";
 
 export default function StaticSection() {
+  const { theme } = useTheme();
   return (
     <div
       className="flex-1 flex flex-col justify-between gap-0 items-center p-2
-      sm:flex-row sm:gap-1 md:flex-row md:gap-2 md:p-2 lg:flex-row lg:w-full xl:flex-row 2xl:flex-col 2xl:gap-2 rounded-2xl shadow-sm border border-gray-100 xl:p-5"
+      sm:flex-col sm:gap-1 md:flex-row md:gap-2 md:p-2 lg:flex-row lg:w-full xl:flex-row 2xl:flex-col 2xl:gap-2 rounded-2xl shadow-sm border border-gray-100 xl:p-5"
     >
       <div className="flex flex-col items-center text-center">
         <div className="relative">
@@ -21,17 +23,28 @@ export default function StaticSection() {
           </div>
         </div>
 
-        <h1 className="text-xs sm:text-sm md:text-base font-semibold mt-3">
+        <h1
+          className={`text-xs sm:text-sm md:text-base font-semibold mt-3
+          ${theme === "light" ? "text-black" : "text-white"}`}
+        >
           Good Morning <span className="text-[#7B61FF]">Jason 🔥</span>
         </h1>
-        <p className="text-xs sm:text-sm md:text-base text-gray-500 mt-1">
+        <p
+          className={`text-xs sm:text-sm md:text-base  mt-1 ${
+            theme === "light" ? "text-gray-500" : "text-white"
+          }`}
+        >
           Continue your learning to achieve your target!
         </p>
       </div>
 
       {/* Bar Chart Section */}
       <div className="mt-6">
-        <h2 className="text-xs md:text-sm font-semibold text-gray-700 mb-3">
+        <h2
+          className={`text-xs md:text-sm font-semibold  mb-3 ${
+            theme === "light" ? "text-gray-700" : "text-white"
+          }`}
+        >
           Statistic
         </h2>
         <div className="flex items-end justify-between h-24">
@@ -48,9 +61,13 @@ export default function StaticSection() {
       </div>
 
       {/* Mentor Section */}
-      <div className="mt-8">
+      <div className="mt-8 w-full md:w-fit">
         <div className="flex justify-between items-center mb-3">
-          <h2 className="text-xs sm:text-sm font-semibold text-gray-700">
+          <h2
+            className={`text-xs sm:text-sm font-semibold  ${
+              theme === "light" ? "text-gray-700" : "text-white"
+            }`}
+          >
             Your Mentor
           </h2>
           <button className="p-1 bg-[#EAE6FF] rounded-lg">
@@ -78,8 +95,13 @@ export default function StaticSection() {
 
 // Reusable mentor card component
 function MentorCard({ name, role, img }) {
+  const { theme } = useTheme();
   return (
-    <div className="flex justify-between gap-2 items-center p-2 rounded-xl hover:bg-gray-50 transition">
+    <div
+      className={`flex justify-between gap-2 items-center p-2 rounded-xl  transition ${
+        theme === "light" ? "hover:bg-gray-00" : "hover:bg-gray-800"
+      }`}
+    >
       <div className="flex items-center gap-3">
         <img
           src={img}
@@ -87,10 +109,21 @@ function MentorCard({ name, role, img }) {
           className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full object-cover"
         />
         <div>
-          <h3 className="text-xs sm:text-sm font-medium text-gray-800">
+          <h3
+            className={`text-xs sm:text-sm font-medium  ${
+              theme === "light" ? "text-black" : "text-white"
+            }`}
+          >
+            {console.log("Black is there", theme)}
             {name}
           </h3>
-          <p className="text-[10px] sm:text-xs text-gray-500">{role}</p>
+          <p
+            className={`text-[10px] sm:text-xs text-gray-500 ${
+              theme === "light" ? "text-black" : "text-white"
+            }`}
+          >
+            {role}
+          </p>
         </div>
       </div>
       <button
